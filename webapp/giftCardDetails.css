@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.details-container{
+    max-width:1200px;
+    margin:100px auto;
+    display:flex;
+    gap:50px;
+    padding:20px;
+}
+
+.left{
+    flex:1;
+}
+
+.left img{
+    width:100%;
+    max-width:500px;
+    border-radius:10px;
+}
+
+.right{
+    flex:1;
+}
+
+.right h1{
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:30px;
+    font-weight:bold;
+    color:#B12704;
+    margin:20px 0;
+}
+
+form{
+    margin-top:30px;
+}
+
+form label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+form input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 30px;
+    background:#FFD814;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}

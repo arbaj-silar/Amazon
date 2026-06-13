@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    background: #fff;
+}
+
+.auth-page {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.logo img {
+    height: 31px;
+    width: auto;
+}
+
+/* Main Card */
+.auth-card {
+    border: 1px solid #D5D9D9;
+    border-radius: 8px;
+    padding: 20px 26px;
+    margin-bottom: 22px;
+}
+
+.auth-card h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #0F1111;
+    margin: 0 0 14px 0;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0F1111;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 31px;
+    padding: 3px 7px;
+    font-size: 13px;
+    color: #0F1111;
+    background: #fff;
+    border: 1px solid #888C8C;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(15,17,17,.15) inset;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007185;
+    box-shadow: 0 0 0 3px #C8F3FA, 0 1px 2px rgba(15,17,17,.15) inset;
+}
+
+.btn-continue {
+    width: 100%;
+    height: 31px;
+    background: #FFD814;
+    border: 1px solid #FCD200;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #0F1111;
+    cursor: pointer;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+}
+
+.btn-continue:hover {
+    background: #F7CA00;
+    border-color: #F2C200;
+}
+
+.legal-text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #0F1111;
+    margin: 0 0 14px 0;
+}
+
+.legal-text a {
+    color: #0066C0;
+    text-decoration: none;
+}
+
+.legal-text a:hover {
+    color: #C7511F;
+    text-decoration: underline;
+}
+
+/* Need Help Dropdown */
+.help-dropdown summary {
+    font-size: 13px;
+    color: #0066C0;
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+}
+
+.help-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.help-dropdown summary::after {
+    content: " ▼";
+    font-size: 10px;
+}
+
+.help-dropdown[open] summary::after {
+    content: " ▲";
+}
+
+.help-dropdown summary:hover {
+    color: #C7511F;
+    text-decoration: underline;
+}
+
+.help-content {
+    padding-top: 10px;
+}
+
+.help-content a {
+    display: block;
+    font-size: 13px;
+    color: #0066C0;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.help-content a:hover {
+    color: #C7511F;
+    text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #E7E7E7;
+    z-index: 0;
+}
+
+.divider span {
+    position: relative;
+    background: #fff;
+    padding: 0 8px;
+    font-size: 12px;
+    color: #767676;
+    z-index: 1;
+}
+
+/* Create Account Button */
+.btn-create-account {
+    display: block;
+    width: 100%;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #D5D9D9;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #0F1111;
+    text-decoration: none;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    box-sizing: border-box;
+}
+
+.btn-create-account:hover {
+    background: #F7FAFA;
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+   .auth-card {
+        padding: 14px 18px;
+    }
+    
+   .auth-card h1 {
+        font-size: 24px;
+    }
+}

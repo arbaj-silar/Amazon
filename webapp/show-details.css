@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.phm-detail {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    background: #0f171e;
+    color: #fff;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    overflow: hidden;
+}
+
+.phm-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+}
+
+.phm-backdrop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.phm-backdrop-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, 
+        #0f171e 0%, 
+        #0f171e 20%, 
+        rgba(15,23,30,0.9) 40%, 
+        rgba(15,23,30,0.4) 70%, 
+        transparent 100%);
+}
+
+.phm-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 80px;
+    padding: 60px 48px;
+    max-width: 1400px;
+}
+
+/* Left Column */
+.phm-left {
+    flex: 0 0 380px;
+}
+
+.phm-actor-name {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #aaa;
+    margin-bottom: 12px;
+}
+
+.phm-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 0.85;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+}
+
+.phm-icon-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.phm-icon-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.3);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phm-icon-btn:hover {
+    background: rgba(255,255,255,0.2);
+    border-color: #fff;
+}
+
+.phm-buy-main {
+    width: 100%;
+    background: #fff;
+    color: #0f171e;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.phm-buy-main:hover {
+    background: #f0f0f0;
+}
+
+.phm-buy-price {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+}
+
+.phm-more-ways {
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.phm-more-ways:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.phm-meta-small {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+    font-size: 13px;
+}
+
+.phm-available {
+    color: #FFB700;
+}
+
+.phm-terms {
+    color: #aaa;
+}
+
+.phm-redeem {
+    color: #00A8E1;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.phm-redeem:hover {
+    text-decoration: underline;
+}
+
+/* Right Column */
+.phm-right {
+    flex: 1;
+    padding-top: 80px;
+    max-width: 700px;
+}
+
+.phm-badge {
+    display: inline-block;
+    background: #00A8E1;
+    color: #0f171e;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 2px;
+    margin-bottom: 16px;
+}
+
+.phm-synopsis {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.phm-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    font-size: 15px;
+    color: #aaa;
+    margin-bottom: 16px;
+}
+
+.phm-tags span {
+    color: #fff;
+}
+
+.phm-rating {
+    color: #00A8E1;
+    font-weight: 700;
+}
+
+.phm-cast {
+    font-size: 15px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.phm-cast strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.phm-badges {
+    display: flex;
+    gap: 8px;
+}
+
+.phm-badge-outline {
+    padding: 4px 8px;
+    border: 1px solid rgba(255,255,255,0.4);
+    font-size: 13px;
+    color: #aaa;
+}
+
+.phm-badge-icon {
+    padding: 4px 8px;
+    border: 1px solid rgba(255,255,255,0.4);
+    font-size: 13px;
+    color: #aaa;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .phm-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .phm-backdrop {
+        width: 100%;
+        height: 50%;
+    }
+    .phm-right {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .phm-content {
+        padding: 40px 20px;
+    }
+    .phm-title {
+        font-size: 48px;
+    }
+    .phm-left {
+        flex: 0 0 auto;
+    }
+}

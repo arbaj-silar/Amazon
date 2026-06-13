@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+
+.pdp-section{
+    background:#fff;
+    padding:30px;
+}
+
+.pdp-container{
+    max-width:1500px;
+    margin:auto;
+}
+
+.pdp-layout{
+    display:grid;
+    grid-template-columns:
+        450px
+        1fr
+        300px;
+
+    gap:40px;
+}
+
+.pdp-main-image{
+    height:550px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.pdp-main-image img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+}
+
+.visit-store{
+    color:#007185;
+    text-decoration:none;
+}
+
+.pdp-title{
+    font-size:28px;
+    line-height:1.4;
+    margin-bottom:15px;
+}
+
+.pdp-rating{
+    color:#007185;
+    margin-bottom:15px;
+}
+
+.fashion-badge{
+    display:inline-block;
+    background:#cc0c39;
+    color:white;
+    padding:6px 12px;
+    border-radius:4px;
+    margin-bottom:20px;
+}
+
+.pdp-price-block{
+    margin:20px 0;
+}
+
+.price-main{
+    font-size:38px;
+    color:#B12704;
+}
+
+.shipping-info{
+    color:#067d62;
+    margin-bottom:20px;
+}
+
+.product-specs{
+    border-top:1px solid #ddd;
+    padding-top:20px;
+}
+
+.spec-row{
+    display:flex;
+    margin-bottom:12px;
+}
+
+.spec-label{
+    width:120px;
+    font-weight:bold;
+}
+
+.about-product{
+    margin-top:30px;
+}
+
+.about-product ul{
+    padding-left:20px;
+}
+
+.pdp-buybox{
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:20px;
+    height:fit-content;
+}
+
+.buybox-price{
+    font-size:30px;
+    color:#B12704;
+}
+
+.stock-status{
+    color:#067d62;
+    margin:15px 0;
+    font-size:20px;
+}
+
+.qty-selector{
+    margin:20px 0;
+}
+
+.btn-add-cart{
+    width:100%;
+    background:#ffd814;
+    border:none;
+    padding:10px;
+    border-radius:20px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.btn-buy-now{
+    width:100%;
+    background:#ffa41c;
+    border:none;
+    padding:10px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.seller-info{
+    margin-top:20px;
+    font-size:14px;
+}
+
+.info-row{
+    display:flex;
+    margin-bottom:10px;
+}
+
+.info-label{
+    width:80px;
+    color:#555;
+}
+
+@media(max-width:1000px){
+
+    .pdp-layout{
+        grid-template-columns:1fr;
+    }
+
+    .pdp-main-image{
+        height:350px;
+    }
+}
