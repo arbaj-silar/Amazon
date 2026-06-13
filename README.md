@@ -203,11 +203,11 @@ http://localhost:8083/Amazon/
 
 <img src="webapp/assets/images/Product-page.png" width="800">
 
-### Shopping Cart
+### Prime Video
 
 <img src="webapp/assets/images/prime-page.png" width="800">
 
-### Checkout Page
+### Sign In Page
 
 <img src="webapp/assets/images/sign-page.png" width="800">
 
